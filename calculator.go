@@ -8,9 +8,9 @@ import (
 	"bufio"
 )
 
-type calc struct {}
+type Calc struct {}
 
-func (calc) operate(input string, operator string) int {
+func (Calc) Operate(input string, operator string) int {
 	cleanInput := strings.Split(input, operator)
 	number1 := parser(cleanInput[0])
 	number2 := parser(cleanInput[1])
