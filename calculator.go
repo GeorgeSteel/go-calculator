@@ -40,14 +40,14 @@ func parser(input string) int {
 	return number
 }
 
-func readInput() string {
+func ReadInput() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	
 	return scanner.Text()
 }
 
-func getOperator(operation string) string {
+func GetOperator(operation string) string {
 	var operator string
 
 	if strings.Contains(operation, "+") {
